@@ -1,9 +1,8 @@
 # Express SQL License API Template
-A minimal template for a hardware based licensing and authentication system, written in TypeScript using Express &amp; SQL.
+A minimal template for a hardware based licensing and authentication system, written in TypeScript using Express &amp; SQL (TypeORM).
 
 &nbsp;
 ## Getting Started
----
 1. Git clone https://github.com/arevi/express-sql-license-api-template.git
 2. npm install
 
@@ -12,7 +11,6 @@ A minimal template for a hardware based licensing and authentication system, wri
 
 &nbsp;
 ## NPM Commands
----
 | Command        | Effect                                                            |
 | -------------- | ----------------------------------------------------------------- |
 | `dev:start`    | Launches the api in development mode, with hot reloading enabled. |
@@ -21,7 +19,6 @@ A minimal template for a hardware based licensing and authentication system, wri
 
 &nbsp;
 ## API Specification
----
 The following below is a minimal API specification to provide a quick overview of the template functionality.
 
 &nbsp;
@@ -67,7 +64,6 @@ GET /auth/heartbeat/000000
 
 &nbsp;
 ## API Responses
----
 To keep the project minimal and simplified the API provides a preset number of responses corresponding to the result of the data result.
 
 &nbsp;

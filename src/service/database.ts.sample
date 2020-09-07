@@ -1,0 +1,26 @@
+// Rename this file to database.ts and enter your information below for local development.
+
+import { createConnection } from "typeorm";
+import { Key } from "../entity/Key";
+
+/**
+ * Connects to our SQL database as configured within ormconfig.json
+ */
+export const connectDatabase = async () => {
+    try{
+      await createConnection({
+        "type": "postgres",
+        "host": process.env.DB_HOST || "localhost",
+        "port": Number(process.env.DB_PORT) || 3306,
+        "username": process.env.DB_HOST || "username",
+        "password": process.env.DB_PASSWORD || "password",
+        "database": process.env.DB_NAME || "database",
+        "synchronize": true,
+        "logging": false,
+        "entities": [Key]
+      });
+      console.log(`[✅] Database connected!`)
+    }catch(err){
+      console.error(`[❌] Database error: ${err}`);
+    }
+  }

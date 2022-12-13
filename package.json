@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/arevi/express-sql-license-api-template#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "helmet": "^4.1.1",
     "pg": "^8.3.3",
     "reflect-metadata": "^0.1.13",
